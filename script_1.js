@@ -1,7 +1,8 @@
 const urls = {
-  cyber: "https://api.rss2json.com/v1/api.json?rss_url=https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml",
-  reseaux: "https://api.rss2json.com/v1/api.json?rss_url=https://www.zdnet.fr/feeds/rss/actualites.xml"
+  cyber: "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml"),
+  reseaux: "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.zdnet.fr/feeds/rss/actualites.xml")
 };
+
 
 function afficherArticles(data, elementId) {
   const container = document.getElementById(elementId);
@@ -34,3 +35,4 @@ fetch(urls.reseaux)
   .then(res => res.json())
   .then(data => afficherArticles(data, "news-reseaux"))
   .catch(err => console.error("Erreur (réseaux) :", err));
+
