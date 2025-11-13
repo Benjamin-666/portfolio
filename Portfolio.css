@@ -114,7 +114,44 @@ nav ol {
     }
 }
 
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
+/* Styles par défaut (ordinateurs) */
+
+@media screen and (max-width: 1024px) {
+  /* Tablettes */
+  body {
+    font-size: 16px;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Smartphones */
+  nav ul {
+    flex-direction: column;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
 
 .btn-accueil-fixe {
     display: inline-block;
@@ -495,5 +532,6 @@ footer {
   text-align: left;
   padding: 10px;
 }
+
 
 
