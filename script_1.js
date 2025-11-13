@@ -1,8 +1,8 @@
 const API_KEY = "1ec4dda3893cbb36285c2c2a19cb27d1";
 
 const urls = {
-  cyber: `https://gnews.io/api/v4/search?q=cybersecurite&lang=fr&country=fr&max=5&apikey=${API_KEY}`,
-  reseaux: `https://gnews.io/api/v4/search?q=administration%20réseau&lang=fr&country=fr&max=5&apikey=${API_KEY}`
+  cyber: `https://gnews.io/api/v4/search?q=cybersecurite&lang=fr&country=fr&max=5&apikey=${API_KEY}`}&t=${Date.now()}`,
+  reseaux: `https://gnews.io/api/v4/search?q=administration%20réseau&lang=fr&country=fr&max=5&apikey=${API_KEY}`}&t=${Date.now()}`,
 };
 
 function afficherArticles(data, elementId) {
@@ -40,3 +40,4 @@ function chargerFlux(url, elementId) {
 
 chargerFlux(urls.cyber, "news-cyber");
 chargerFlux(urls.reseaux, "news-reseaux");
+
