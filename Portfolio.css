@@ -1,0 +1,499 @@
+header {
+  background-color: #356FCC;
+  color: white;
+  text-align: center;
+  padding-top: 35px;
+}
+
+
+titre {
+      background-color: lightblue; /* couleur de fond */
+      text-align: center;         /* centre le texte */
+      padding: 20px;              /* espace autour du texte */
+      font-size: 30px;            /* taille du texte */
+      font-weight: bold;          /* texte en gras */
+    }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  background-color: #ffffff;
+  width: 97%;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav h2 {
+  font-size: 1.5rem;
+  color: #0078ff;
+}
+
+nav ol {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+
+/* Zone GAUCHE, CENTRE, DROITE */
+.nav-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Ajustement du bouton CV */
+.nav-right ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;              /* ✅ permet d'aligner les <li> horizontalement */
+    gap: 20px;                  /* ✅ espace entre les boutons */
+    align-items: center;        /* ✅ verticalement centrés */
+}
+
+.nav-right li {
+    margin: 0;
+}
+
+/* ----- BARRE DE RECHERCHE NAVIGATION ----- */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-bar input {
+    padding: 7px 12px;
+    font-size: 14px;
+    border: 2px solid #3498db;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: #2980b9;
+    box-shadow: 0px 0px 6px rgba(0, 120, 255, 0.5);
+}
+
+/* Bouton Loupe */
+.search-bar button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 100px;
+    }
+}
+
+
+
+.btn-accueil-fixe {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #3498db;   /* bleu */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;       /* enlève le soulignement du lien */
+    border-radius: 8px;          /* arrondi des coins */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;   /* effet animé */
+  }
+
+
+.btn-accueil {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #3498db;   /* bleu */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;       /* enlève le soulignement du lien */
+    border-radius: 8px;          /* arrondi des coins */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;   /* effet animé */
+  }
+
+.btn-accueil:hover {
+    background-color: #2980b9;   /* bleu plus foncé au survol */
+    transform: scale(1.05);      /* effet zoom */
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+  }
+
+.btn-CV {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #3498db;   /* bleu */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;       /* enlève le soulignement du lien */
+    border-radius: 8px;          /* arrondi des coins */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;   /* effet animé */
+  }
+
+  .btn-CV:hover {
+    background-color: #2980b9;   /* bleu plus foncé au survol */
+    transform: scale(1.05);      /* effet zoom */
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+  }
+
+.btn-CV-1 {
+    display: inline-block;
+    float: right;                /* aligne à droite */
+    padding: 5px 15px;
+    background-color: #3498db;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-CV-1:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+   
+
+
+.btn-nom-fixe {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #FFFFFF;   /* bleu */
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;       /* enlève le soulignement du lien */
+    border-radius: 8px;          /* arrondi des coins */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;   /* effet animé */
+  }
+
+#presentation {
+    width: 80%;                     /* largeur du bloc */
+    margin: 40px auto;              /* centré avec espace au-dessus */
+    padding: 30px;                  /* espace intérieur */
+    background-color: #f7f9fc;      /* léger fond bleu clair */
+    border-radius: 12px;            /* coins arrondis */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1); /* ombre légère */
+    display: flex;                  /* affichage en ligne */
+    align-items: center;            /* centrage vertical */
+    gap: 30px;                      /* espace entre image et texte */
+}
+
+/* Style pour l'image dans la présentation */
+#presentation img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;             /* image ronde */
+    object-fit: cover;              /* recadre proprement */
+    border: 4px solid #3498db;      /* contour bleu */
+}
+
+/* Style du texte dans la présentation */
+#presentation .texte {
+    flex: 1;                        /* prend tout l’espace restant */
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ----- SECTION CV ----- */
+#cv {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+#cv .texte {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+#cv h4 {
+    font-size: 22px;
+    color: #0078ff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Cartes d'information */
+#cv p {
+    position: relative; /* IMPORTANT pour le placement du bouton */
+    background-color: #e8f2ff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 120px; /* assez grand pour du texte + bouton */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
+}
+
+#cv ul {
+    margin-top: 10px;
+    margin-bottom: 45px; /* pour ne pas gêner le bouton */
+    padding-left: 20px; /* indentation propre */
+}
+
+#cv li {
+    margin-bottom: 5px;
+}
+
+
+/* ----- SECTION PROJET ----- */
+#projet {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+#projet .texte {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+#projet h4 {
+    font-size: 22px;
+    color: #0078ff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Cartes d'information */
+#projet p {
+    position: relative; /* IMPORTANT pour le placement du bouton */
+    background-color: #e8f2ff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 120px; /* assez grand pour du texte + bouton */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
+}
+
+#projet ul {
+    margin-top: 10px;
+    margin-bottom: 45px; /* pour ne pas gêner le bouton */
+    padding-left: 20px; /* indentation propre */
+}
+
+#projet li {
+    margin-bottom: 5px;
+}
+
+
+/* Style du bouton CV réutilisant le style de btn-accueil */
+.btn-cv-details {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #3498db; /* même bleu */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-cv-details:hover {
+    background-color: #2980b9; /* bleu foncé */
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    #cv .texte {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+}
+
+h1 {
+      width: 31%;                  /* largeur (ici 60% de la page, modifiable) */
+      margin: 20px auto;            /* centre horizontalement */
+      background-color: lightblue;  /* couleur de fond */
+      text-align: center;           /* centre le texte à l'intérieur */
+      padding: 20px;                /* espace autour du texte */
+      border-radius: 10px;          /* coins arrondis */
+      font-size: 28px;              /* taille du texte */
+      font-weight: bold;            /* texte en gras */
+    }
+
+h3 {
+      width: 31%;                  /* largeur (ici 60% de la page, modifiable) */
+      margin: 20px auto;            /* centre horizontalement */
+      background-color: lightblue;  /* couleur de fond */
+      text-align: center;           /* centre le texte à l'intérieur */
+      padding: 20px;                /* espace autour du texte */
+      border-radius: 10px;          /* coins arrondis */
+      font-size: 28px;              /* taille du texte */
+      font-weight: bold;            /* texte en gras */
+    }
+
+/* === SECTION VEILLE TECHNOLOGIQUE === */
+#veille-technologique {
+    width: 80%;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+#veille-technologique h2 {
+    text-align: center;
+    color: #356FCC;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Conteneur global des deux thèmes */
+.veille-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 900px) {
+    .veille-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Bloc d’un thème (Cybersécurité / Réseaux) */
+.theme-section {
+    background-color: #f7f9fc;
+    border: 2px solid #dce9ff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.theme-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 6px 12px rgba(0,0,0,0.1);
+}
+
+.theme-section h3 {
+    color: #356FCC;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+/* Articles */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news-item {
+    background-color: #e8f2ff;
+    padding: 15px;
+    border-left: 4px solid #356FCC;
+    border-radius: 6px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.05);
+}
+
+.news-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+}
+
+.news-item h4 a {
+    color: #356FCC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-item h4 a:hover {
+    text-decoration: underline;
+}
+
+.news-item p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.news-item small {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+
+.btn-pied_page {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #356FCC;   /* bleu */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;       /* enlève le soulignement du lien */
+    border-radius: 8px;          /* arrondi des coins */
+    transition: all 0.3s ease;    /* effet animé */
+  }
+
+footer {
+  background-color: #356FCC;
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+
