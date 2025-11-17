@@ -409,7 +409,7 @@ nav ol {
 }
 
 h1 {
-      max-width: 90%;      /* 👉 MODIF : largeur adaptée automatiquement */
+      max-width: 31%;      /* 👉 MODIF : largeur adaptée automatiquement */
       width: auto;         /* 👉 MODIF : laisse le navigateur adapter */
       margin: 20px auto;            /* centre horizontalement */
       background-color: lightblue;  /* couleur de fond */
@@ -421,7 +421,7 @@ h1 {
     }
 
 h3 {
-      max-width: 90%;      /* 👉 MODIF : largeur adaptée automatiquement */
+      max-width: 31%;      /* 👉 MODIF : largeur adaptée automatiquement */
       width: auto;         /* 👉 MODIF : laisse le navigateur adapter */
       margin: 20px auto;            /* centre horizontalement */
       background-color: lightblue;  /* couleur de fond */
@@ -567,6 +567,7 @@ footer {
         padding: 8px;            /* 👉 MODIF */
     }
 }
+
 
 
 
