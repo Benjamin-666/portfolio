@@ -409,17 +409,9 @@ nav ol {
 }
 
 
-h1, h3 {
-    display: inline-block;
-    margin: 20px auto;      /* centre horizontalement */
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 h1 {
-      display: inline-block;        /* 👉 MODIF : largeur = contenu */
-      max-width: 90%;               /* (sécurité pour mobile) */
+      width: 31%;               /* (sécurité pour mobile) */
       width: auto;         /* 👉 MODIF : laisse le navigateur adapter */
       margin: 20px auto;            /* centre horizontalement */
       background-color: lightblue;  /* couleur de fond */
@@ -431,8 +423,7 @@ h1 {
     }
 
 h3 {
-      display: inline-block;        /* 👉 MODIF : largeur = contenu */
-      max-width: 90%;               /* (sécurité pour mobile) */
+      width: 31%;               /* (sécurité pour mobile) */
       width: auto;         /* 👉 MODIF : laisse le navigateur adapter */
       margin: 20px auto;            /* centre horizontalement */
       background-color: lightblue;  /* couleur de fond */
@@ -577,7 +568,15 @@ footer {
         text-align: center;      /* 👉 MODIF */
         padding: 8px;            /* 👉 MODIF */
     }
+
+    h1, h3 {
+        display: inline-block;   /* largeur selon le texte */
+        margin: 20px auto;       /* centre le bloc */
+        text-align: center;
+    }
 }
+
+
 
 
 
