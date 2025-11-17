@@ -5,14 +5,17 @@ header {
   padding-top: 35px;
 }
 
-
 titre {
-      background-color: lightblue; /* couleur de fond */
-      text-align: center;         /* centre le texte */
-      padding: 20px;              /* espace autour du texte */
-      font-size: 30px;            /* taille du texte */
-      font-weight: bold;          /* texte en gras */
-    }
+    display: inline-block;   /* 👉 devient un vrai bloc centrable */
+    margin: 20px auto;       /* 👉 maintenant ça CENTRE */
+    background-color: lightblue;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
 
 nav {
       display: flex;
@@ -573,6 +576,7 @@ footer {
         text-align: center;
     }
 }
+
 
 
 
