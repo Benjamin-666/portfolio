@@ -411,27 +411,25 @@ nav ol {
 
 
 h1 {
-      width: 31%;               /* (sécurité pour mobile) */
-      width: auto;         /* 👉 MODIF : laisse le navigateur adapter */
-      margin: 20px auto;            /* centre horizontalement */
-      background-color: lightblue;  /* couleur de fond */
-      text-align: center;           /* centre le texte à l'intérieur */
-      padding: 20px;                /* espace autour du texte */
-      border-radius: 10px;          /* coins arrondis */
-      font-size: 28px;              /* taille du texte */
-      font-weight: bold;            /* texte en gras */
+    display: inline-block;            /* 👉 CENTRE + largeur selon texte */
+    margin: 20px auto;                /* centre horizontalement */
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
     }
 
 h3 {
-      width: 31%;               /* (sécurité pour mobile) */
-      width: auto;         /* 👉 MODIF : laisse le navigateur adapter */
-      margin: 20px auto;            /* centre horizontalement */
-      background-color: lightblue;  /* couleur de fond */
-      text-align: center;           /* centre le texte à l'intérieur */
-      padding: 20px;                /* espace autour du texte */
-      border-radius: 10px;          /* coins arrondis */
-      font-size: 28px;              /* taille du texte */
-      font-weight: bold;            /* texte en gras */
+    display: inline-block;            /* 👉 CENTRE + largeur selon texte */
+    margin: 20px auto;                /* centre horizontalement */
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
     }
 
 /* === SECTION VEILLE TECHNOLOGIQUE === */
@@ -575,6 +573,7 @@ footer {
         text-align: center;
     }
 }
+
 
 
 
