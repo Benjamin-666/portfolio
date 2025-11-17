@@ -24,6 +24,8 @@ nav {
       width: 97%;
       z-index: 999;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      flex-wrap: wrap;  /* 👉 MODIF : permet aux éléments de passer à la ligne sur mobile */
+      width: 100%;      /* 👉 MODIF : remplace 97% pour éviter les débordements */
 }
 
 nav h2 {
@@ -402,12 +404,13 @@ nav ol {
 /* Responsive mobile */
 @media (max-width: 768px) {
     #cv .texte {
-        grid-template-columns: 1fr; /* 1 colonne */
+        grid-template-columns: 1fr !important;   /* 👉 MODIF : force une seule colonne */
     }
 }
 
 h1 {
-      width: 31%;                  /* largeur (ici 60% de la page, modifiable) */
+      max-width: 90%;      /* 👉 MODIF : largeur adaptée automatiquement */
+      width: auto;         /* 👉 MODIF : laisse le navigateur adapter */
       margin: 20px auto;            /* centre horizontalement */
       background-color: lightblue;  /* couleur de fond */
       text-align: center;           /* centre le texte à l'intérieur */
@@ -418,7 +421,8 @@ h1 {
     }
 
 h3 {
-      width: 31%;                  /* largeur (ici 60% de la page, modifiable) */
+      max-width: 90%;      /* 👉 MODIF : largeur adaptée automatiquement */
+      width: auto;         /* 👉 MODIF : laisse le navigateur adapter */
       margin: 20px auto;            /* centre horizontalement */
       background-color: lightblue;  /* couleur de fond */
       text-align: center;           /* centre le texte à l'intérieur */
@@ -539,6 +543,29 @@ footer {
     color: white;
     text-align: left;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #presentation {
+        flex-direction: column;   /* 👉 MODIF : passe l’image au-dessus du texte */
+        text-align: center;       /* 👉 MODIF : centre le texte */
+    }
+
+    #presentation img {
+        margin: 0 auto;           /* 👉 MODIF : centre l’image */
+    }
+  
+      .nav-right ol {
+        flex-direction: column;  /* 👉 MODIF : boutons empilés verticalement */
+        gap: 10px;               /* 👉 MODIF */
+    }
+
+    .btn-CV {
+        font-size: 16px;         /* 👉 MODIF : taille réduite */
+        width: 100%;             /* 👉 MODIF : prend toute la largeur */
+        text-align: center;      /* 👉 MODIF */
+        padding: 8px;            /* 👉 MODIF */
+    }
 }
 
 
