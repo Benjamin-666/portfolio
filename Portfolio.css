@@ -15,15 +15,15 @@ titre {
     }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: fixed;
-  background-color: #ffffff;
-  width: 97%;
-  z-index: 999;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: fixed;
+      background-color: #ffffff;
+      width: 97%;
+      z-index: 999;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 nav h2 {
@@ -268,6 +268,14 @@ nav ol {
     color: #333;
     line-height: 1.6;
 }
+
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+    .search-bar input { width: 100px; }
+    #cv .texte { grid-template-columns: 1fr; }
+}
+
 
 /* ----- SECTION CV ----- */
 #cv {
@@ -527,11 +535,12 @@ h3 {
   }
 
 footer {
-  background-color: #356FCC;
-  color: white;
-  text-align: left;
-  padding: 10px;
+    background-color: #356FCC;
+    color: white;
+    text-align: left;
+    padding: 10px;
 }
+
 
 
 
