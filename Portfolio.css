@@ -409,7 +409,8 @@ nav ol {
 }
 
 h1 {
-      max-width: 31%;      /* 👉 MODIF : largeur adaptée automatiquement */
+      display: inline-block;        /* 👉 MODIF : largeur = contenu */
+      max-width: 90%;               /* (sécurité pour mobile) */
       width: auto;         /* 👉 MODIF : laisse le navigateur adapter */
       margin: 20px auto;            /* centre horizontalement */
       background-color: lightblue;  /* couleur de fond */
@@ -421,7 +422,8 @@ h1 {
     }
 
 h3 {
-      max-width: 31%;      /* 👉 MODIF : largeur adaptée automatiquement */
+      display: inline-block;        /* 👉 MODIF : largeur = contenu */
+      max-width: 90%;               /* (sécurité pour mobile) */
       width: auto;         /* 👉 MODIF : laisse le navigateur adapter */
       margin: 20px auto;            /* centre horizontalement */
       background-color: lightblue;  /* couleur de fond */
@@ -567,6 +569,7 @@ footer {
         padding: 8px;            /* 👉 MODIF */
     }
 }
+
 
 
 
