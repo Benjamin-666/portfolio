@@ -68,7 +68,7 @@ nav ol {
     display: flex;              /* ✅ permet d'aligner les <li> horizontalement */
     gap: 15px;                  /* ✅ espace entre les boutons */
     align-items: center;        /* ✅ verticalement centrés */
-    flex-wrap: wrap; /* <-- évite la sortie d'écran */
+    flex-wrap: nowrap; /* empêche le débordement en colonne */
     max-width: 100%; /* <-- empêche le débordement horizontal */
 }
 
@@ -596,6 +596,7 @@ footer {
 
     }
 }
+
 
 
 
