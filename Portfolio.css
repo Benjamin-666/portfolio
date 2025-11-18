@@ -573,8 +573,18 @@ footer {
         display: inline-block;   /* largeur selon le texte */
         margin: 20px auto;       /* centre le bloc */
         text-align: center;
+        width: 90%;              /* 👉 L'étiquette prend 90% de l'écran */
+        max-width: 350px;        /* 👉 Limite pour éviter un bloc trop large */
+        margin: 20px auto;       /* 👉 Centre horizontalement */
+        text-align: center;      /* 👉 Centre le texte à l’intérieur */
+        word-wrap: break-word;   /* 👉 Le texte ne dépasse JAMAIS */
+        padding: 15px;           /* 👉 Garde un beau rendu */
+        font-size: 22px;         /* 👉 Taille lisible sur mobile */
+        display: block;          /* 👉 Permet un vrai centrage propre */
+
     }
 }
+
 
 
 
