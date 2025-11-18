@@ -5,7 +5,7 @@ header {
   padding-top: 35px;
 }
 
-titre {
+.titre {
     display: inline-block;   /* 👉 devient un vrai bloc centrable */
     margin: 20px auto;       /* 👉 maintenant ça CENTRE */
     background-color: lightblue;
@@ -576,6 +576,7 @@ footer {
         text-align: center;
     }
 }
+
 
 
 
