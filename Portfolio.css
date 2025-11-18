@@ -5,16 +5,14 @@ header {
   padding-top: 35px;
 }
 
-.titre {
-    display: inline-block;   /* 👉 devient un vrai bloc centrable */
-    margin: 20px auto;       /* 👉 maintenant ça CENTRE */
-    background-color: lightblue;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 10px;
-}
+titre {
+      background-color: lightblue; /* couleur de fond */
+      text-align: center;         /* centre le texte */
+      padding: 20px;              /* espace autour du texte */
+      font-size: 30px;            /* taille du texte */
+      font-weight: bold;          /* texte en gras */
+    }
+
 
 
 nav {
@@ -414,25 +412,26 @@ nav ol {
 
 
 h1 {
-    display: inline-block;            /* 👉 CENTRE + largeur selon texte */
-    margin: 20px auto;                /* centre horizontalement */
-    background-color: lightblue;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 28px;
-    font-weight: bold;
+      width: 31%;                  /* largeur (ici 60% de la page, modifiable) */
+      margin: 20px auto;            /* centre horizontalement */
+      background-color: lightblue;  /* couleur de fond */
+      text-align: center;           /* centre le texte à l'intérieur */
+      padding: 20px;                /* espace autour du texte */
+      border-radius: 10px;          /* coins arrondis */
+      font-size: 28px;              /* taille du texte */
+      font-weight: bold;            /* texte en gras */
     }
 
+
 h3 {
-    display: inline-block;            /* 👉 CENTRE + largeur selon texte */
-    margin: 20px auto;                /* centre horizontalement */
-    background-color: lightblue;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 28px;
-    font-weight: bold;
+      width: 31%;                  /* largeur (ici 60% de la page, modifiable) */
+      margin: 20px auto;            /* centre horizontalement */
+      background-color: lightblue;  /* couleur de fond */
+      text-align: center;           /* centre le texte à l'intérieur */
+      padding: 20px;                /* espace autour du texte */
+      border-radius: 10px;          /* coins arrondis */
+      font-size: 28px;              /* taille du texte */
+      font-weight: bold;            /* texte en gras */
     }
 
 /* === SECTION VEILLE TECHNOLOGIQUE === */
@@ -576,6 +575,7 @@ footer {
         text-align: center;
     }
 }
+
 
 
 
