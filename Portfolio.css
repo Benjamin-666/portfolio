@@ -27,6 +27,7 @@ nav {
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       flex-wrap: wrap;  /* 👉 MODIF : permet aux éléments de passer à la ligne sur mobile */
       width: 100%;      /* 👉 MODIF : remplace 97% pour éviter les débordements */
+
 }
 
 nav h2 {
@@ -65,8 +66,10 @@ nav ol {
     margin: 0;
     padding: 0;
     display: flex;              /* ✅ permet d'aligner les <li> horizontalement */
-    gap: 20px;                  /* ✅ espace entre les boutons */
+    gap: 15px;                  /* ✅ espace entre les boutons */
     align-items: center;        /* ✅ verticalement centrés */
+    flex-wrap: wrap; /* <-- évite la sortie d'écran */
+    max-width: 100%; /* <-- empêche le débordement horizontal */
 }
 
 .nav-right li {
@@ -191,7 +194,7 @@ nav ol {
 
 .btn-CV {
     display: inline-block;
-    padding: 5px 15px;
+    padding: 5px 12px;
     background-color: #3498db;   /* bleu */
     color: white;
     font-size: 20px;
@@ -200,6 +203,7 @@ nav ol {
     border-radius: 8px;          /* arrondi des coins */
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     transition: all 0.3s ease;   /* effet animé */
+    white-space: nowrap; /* Le texte reste sur une ligne */
   }
 
   .btn-CV:hover {
@@ -556,10 +560,17 @@ footer {
     #presentation img {
         margin: 0 auto;           /* 👉 MODIF : centre l’image */
     }
+
+    nav {
+        padding: 1rem;                 /* Réduit le padding pour éviter tout débordement */
+    }
   
-      .nav-right ol {
+    .nav-right ol {
         flex-direction: column;  /* 👉 MODIF : boutons empilés verticalement */
         gap: 10px;               /* 👉 MODIF */
+        width: 100%;                   /* Oblige la liste à rester dans l'écran */
+        padding: 0;
+        margin: 0;
     }
 
     .btn-CV {
@@ -567,6 +578,7 @@ footer {
         width: 100%;             /* 👉 MODIF : prend toute la largeur */
         text-align: center;      /* 👉 MODIF */
         padding: 8px;            /* 👉 MODIF */
+        box-sizing: border-box;        /* Empêche tout débordement interne */
     }
 
     h1, h3 {
@@ -584,6 +596,7 @@ footer {
 
     }
 }
+
 
 
 
