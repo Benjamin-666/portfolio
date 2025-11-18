@@ -48,11 +48,7 @@ nav ol {
     justify-content: flex-start;
 }
 
-.nav-center {
-    flex: 1; /* si tu veux remettre ta barre de recherche plus tard */
-    display: flex;
-    justify-content: center;
-}
+
 
 .nav-right {
     flex: 0 1 auto; /* la zone ne reste plus bloquée à 33% */
@@ -596,6 +592,7 @@ footer {
 
     }
 }
+
 
 
 
