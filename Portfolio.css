@@ -26,7 +26,7 @@ nav {
       z-index: 999;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       flex-wrap: nowrap;  /* 👉 MODIF : permet aux éléments de passer à la ligne sur mobile */
-      width: 100%;      /* 👉 MODIF : remplace 97% pour éviter les débordements */
+      width: 97%;      /* 👉 MODIF : remplace 97% pour éviter les débordements */
 
 }
 
