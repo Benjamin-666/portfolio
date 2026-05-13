@@ -209,8 +209,7 @@ nav ol {
   }
 
 .btn-CV-1 {
-    display: inline-block;
-    float: right;                /* aligne à droite */
+    display: block;
     padding: 5px 15px;
     background-color: #3498db;
     color: white;
@@ -220,6 +219,9 @@ nav ol {
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
+    text-align: center;
+    margin: auto;
+    width: 15%;
 }
 
 .btn-CV-1:hover {
@@ -340,12 +342,31 @@ nav ol {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
-#projet .texte {
+#projet .texte-perso {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 colonnes */
     gap: 30px;
     font-size: 18px;
     color: #333;
+    background-color: #dfffee;
+}
+
+#projet .texte-sco {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 30px;
+    font-size: 18px;
+    color: #333;
+    background-color: #ffffef;
+}
+
+#projet .texte-pro {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 30px;
+    font-size: 18px;
+    color: #333;
+    background-color: #effeff;
 }
 
 #projet h4 {
@@ -592,22 +613,3 @@ footer {
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
