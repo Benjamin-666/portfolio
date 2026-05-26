@@ -342,6 +342,15 @@ nav ol {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
+#projet .texte {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 30px;
+    font-size: 18px;
+    color: #333;
+    background-color: #ffffff;
+}
+
 #projet .texte-perso {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 colonnes */
@@ -393,13 +402,147 @@ nav ol {
 #projet ul {
     margin-top: 10px;
     margin-bottom: 45px; /* pour ne pas gêner le bouton */
-    padding-left: 20px; /* indentation propre */
+    padding: 20px; /* indentation propre */
+    border-radius: 10px;
+    background-color: #e8f2ff;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
 }
 
 #projet li {
     margin-bottom: 5px;
 }
 
+/* ----- SECTION STAGE ----- */
+#stage {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+#stage .texte {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 30px;
+    font-size: 18px;
+    color: #333;
+    background-color: #ffffff;
+}
+
+#stage h4 {
+    font-size: 22px;
+    color: #0078ff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#stage p {
+    position: relative; /* IMPORTANT pour le placement du bouton */
+    background-color: #e8f2ff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 120px; /* assez grand pour du texte + bouton */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
+}
+
+#stage ul {
+    margin-top: 10px;
+    margin-bottom: 45px; /* pour ne pas gêner le bouton */
+    padding: 20px; /* indentation propre */
+    border-radius: 10px;
+    background-color: #e8f2ff;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
+}
+
+#stage li {
+    margin-bottom: 5px;
+}
+.btn-stage {
+    color: #060606;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.partie {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.partie h2 {
+    margin: 0;
+    padding: 12px;
+    background: #f2f2f2;
+    cursor: pointer;
+    text-align: center;
+}
+
+.partie h3 {
+    width: 20%;
+    padding: 6px;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+.partie h5 {
+    margin: 0;
+    padding: 12px;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+#partie titre {
+    font-size: 30px;            /* taille du texte */
+    font-weight: bold;          /* texte en gras */
+}
+
+.partie .titre-content {
+    display: none;
+    padding: 15px;
+}
+
+.partie.active .titre-content {
+    display: block;
+    font-size: 30px;            /* taille du texte */
+    font-weight: bold;          /* texte en gras */
+}
+
+.partie .content-2c {
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    display: none;
+    padding: 15px;
+}
+
+/* partie ouverte */
+.partie.active .content-2c {
+    display: grid;
+}
+
+.partie .content {
+    display: none;
+    padding: 15px;
+}
+
+/* partie ouverte */
+.partie.active .content {
+    display: block;
+}
+
+.semaine .content {
+    display: none;
+}
+
+.semaine.active .content {
+    display: block;
+}
 
 /* Style du bouton CV réutilisant le style de btn-accueil */
 .btn-cv-details {
