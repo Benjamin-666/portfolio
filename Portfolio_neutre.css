@@ -1,0 +1,613 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(
+            135deg,
+            #f8fafc,
+            #e2e8f0,
+            #f1f5f9
+    );
+    color:#1e293b;
+    min-height:100vh;
+    line-height:1.7;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid #e2e8f0;
+
+    padding:20px;
+}
+
+.nav-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.nav-center h2{
+    color:#2563eb;
+    font-size:1.6rem;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    text-align:center;
+    padding:30px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    color:#0f172a;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+/* =========================
+   TITRES
+========================= */
+
+h3{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:30px;
+    color:#1e293b;
+}
+
+/* =========================
+   BOUTON ACCUEIL
+========================= */
+
+.btn-accueil-fixe{
+    width:220px;
+    margin:auto;
+
+    text-align:center;
+
+    padding:15px 20px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+            135deg,
+            #3b82f6,
+            #2563eb
+    );
+
+    color:white;
+
+    font-weight:600;
+
+    box-shadow:
+            0 8px 20px rgba(37,99,235,0.25);
+
+    transition:all 0.3s ease;
+}
+
+.btn-accueil-fixe:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   SECTION PRESENTATION
+========================= */
+
+#presentation{
+    max-width:1100px;
+
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    gap:50px;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:
+            0 10px 30px rgba(0,0,0,0.08);
+}
+
+#presentation img{
+    width:250px;
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid white;
+
+    box-shadow:
+            0 10px 25px rgba(0,0,0,0.15);
+}
+
+.texte{
+    flex:1;
+}
+
+.texte h2{
+    color:#2563eb;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.texte p{
+    color:#475569;
+    font-size:1.1rem;
+}
+
+/* =========================
+   FORMULAIRE CENTRÉ
+========================= */
+
+.form-portfolio{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:12px;
+}
+
+/* =========================
+   CARTES OPTIONS
+========================= */
+
+.card-option{
+    width:280px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:15px 20px;
+
+    border-radius:15px;
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    box-shadow:0 6px 15px rgba(0,0,0,0.05);
+
+    cursor:pointer;
+
+    transition:all 0.25s ease;
+
+    font-size:1rem;
+    font-weight:500;
+
+    color:#334155;
+}
+
+/* cacher radio */
+.card-option input{
+    display:none;
+}
+
+/* hover */
+.card-option:hover{
+    transform:translateY(-3px);
+    border-color:#2563eb;
+    color:#2563eb;
+}
+
+/* sélectionné */
+.card-option input:checked + span{
+    color:white;
+}
+
+.card-option:has(input:checked){
+    background:#2563eb;
+    color:white;
+    border-color:#2563eb;
+    box-shadow:0 10px 20px rgba(37,99,235,0.25);
+}
+
+/* bouton centré propre */
+button{
+    margin-top:10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top:80px;
+
+    background:white;
+
+    border-top:1px solid #e2e8f0;
+
+    padding:40px 20px;
+
+    text-align:center;
+}
+
+footer ul{
+    list-style:none;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-bottom:25px;
+}
+
+.btn-pied_page{
+    text-decoration:none;
+
+    color:#334155;
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+    padding:12px 20px;
+
+    border-radius:50px;
+
+    transition:all 0.3s ease;
+}
+
+.btn-pied_page:hover{
+    background:#2563eb;
+    color:white;
+}
+
+footer p{
+    color:#64748b;
+    font-size:0.95rem;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f5f9;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#94a3b8;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#64748b;
+}
+
+/* =========================
+   RESPONSIVE TABLETTE
+========================= */
+
+@media (max-width: 900px){
+
+    #presentation{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    #presentation img{
+        width:220px;
+        height:220px;
+    }
+
+    .texte h2{
+        font-size:1.7rem;
+    }
+
+    header h1{
+        font-size:2.4rem;
+    }
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 600px){
+
+    nav{
+        padding:15px;
+    }
+
+    .nav-center h2{
+        font-size:1.2rem;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    h3{
+        font-size:1.5rem;
+    }
+
+    #presentation{
+        padding:30px 25px;
+        margin:0 15px;
+    }
+
+    #presentation img{
+        width:180px;
+        height:180px;
+    }
+
+    .texte h2{
+        font-size:1.5rem;
+    }
+
+    .texte p{
+        font-size:1rem;
+    }
+
+    #questionnaire{
+        margin:40px 15px;
+        padding:25px;
+    }
+
+    footer ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn-pied_page{
+        width:220px;
+        text-align:center;
+    }
+}
+/* =========================
+   BREADCRUMB MINIMAL + HOVER BUTTON
+========================= */
+
+.breadcrumb{
+    max-width:1100px;
+
+    margin:20px 0 20px 40px;
+
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+
+    gap:6px;
+
+    font-size:0.95rem;
+
+    color:#64748b;
+}
+
+/* liens */
+.breadcrumb a{
+    text-decoration:none;
+    color:#2563eb;
+
+    font-weight:500;
+
+    padding:2px 6px;
+    border-radius:8px;
+
+    transition:all 0.25s ease;
+}
+
+/* 🔥 effet bouton AU SURVOL */
+.breadcrumb a:hover{
+    background:#2563eb;
+    color:white;
+
+    padding:4px 10px;
+    border-radius:20px;
+
+    box-shadow:0 4px 12px rgba(37,99,235,0.25);
+}
+
+/* séparateur */
+.breadcrumb .sep{
+    color:#94a3b8;
+    font-weight:600;
+}
+
+/* page actuelle */
+.breadcrumb .current{
+    color:#0f172a;
+    font-weight:600;
+
+    padding:2px 6px;
+}
+
+/* =========================
+   PAGE CONTENU GENERIQUE
+========================= */
+
+.content{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+/* carte blanche comme accueil */
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* liste légale */
+.legal-list{
+    list-style:none;
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.legal-list li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.legal-list img{
+    width:20px;
+    height:20px;
+}
+
+.legal-list a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.legal-list a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   CONTACT LIST
+========================= */
+
+.contact-list{
+    margin-top:25px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:15px 18px;
+
+    border-radius:15px;
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+    transition:0.25s ease;
+}
+
+/* hover moderne */
+.contact-item:hover{
+    background:white;
+    transform:translateX(5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.contact-item img{
+    width:22px;
+    height:22px;
+}
+
+.contact-item a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:500;
+}
+
+.contact-item a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   NAVBAR MODERNE UNIFORME
+========================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 30px;
+
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid #e2e8f0;
+}
+
+/* gauche */
+.nav-left h2{
+    font-size:1.3rem;
+    color:#2563eb;
+    font-weight:600;
+}
+
+/* menu */
+.nav-menu{
+    display:flex;
+    list-style:none;
+    gap:10px;
+}
+
+/* liens */
+.nav-menu li a{
+    text-decoration:none;
+
+    color:#334155;
+
+    font-weight:500;
+
+    padding:8px 12px;
+
+    border-radius:10px;
+
+    transition:0.25s ease;
+}
+
+/* hover moderne */
+.nav-menu li a:hover{
+    background:#2563eb;
+    color:white;
+}
