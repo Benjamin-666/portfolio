@@ -2,90 +2,108 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Benjamin</title>
-  <link rel="stylesheet" href="Portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Benjamin - Contact</title>
+
+    <link rel="stylesheet" href="Portfolio_neutre.css">
+
+    <!-- police moderne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
+<body>
 
+<!-- NAV IDENTIQUE ACCUEIL -->
+<nav class="navbar">
 
-<nav>
     <div class="nav-left">
         <h2>QUANTIN Benjamin</h2>
     </div>
 
-    <!--<div class="nav-center">
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Recherche...">
-            <button type="submit" id="searchBtn">🔍</button>
-        </div>
-    </div>-->
-
     <div class="nav-right">
-        <ol>
-	    <li><a href="epreuve_oral.html" class="btn-CV">Epreuve Orale E5</a></li>
-            <li><a href="veille_technologique.html" class="btn-CV">Veille Technologique</a></li>
-            <li><a href="projet.html" class="btn-CV">Mes Projets</a></li> 
-			<li><a href="stage.html" class="btn-CV">Suivi de Stage</a></li>
-	    	<li><a href="cv.html" class="btn-CV">Mon CV Numérique</a></li>
+        <ol class="nav-menu">
+
+            <li><a href="epreuve_oral.html">Epreuve Oral E5</a></li>
+            <li><a href="veille_technologique.html">Veille Technologique</a></li>
+            <li><a href="projet.html">Projets</a></li>
+            <li><a href="stage.html">Stage</a></li>
+            <li><a href="cv.html">CV</a></li>
+
         </ol>
     </div>
+
 </nav>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
+
+<br/><br/><br/><br/><br/>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+    <a href="index.html">Accueil</a>
+    <span class="sep">/</span>
+    <span class="current">Contact</span>
+</div>
 
 <header>
-
-	
-	<h1 class="titre"> <b>Contact</b> </h1>
-
-	<p></p>
-	<p></p>
-	<br/>
+    <h1>Contact</h1>
 </header>
-<body>
-<br/>
-<titel><b>> <a href="index.html" class="btn-accueil">Accueil</a> > <span class="btn-nom-fixe">Contact</span></b></titel>
-<h2 class="titre"><b>Contact </b></h2>
-<br/>
-<h4><b><u>Contact :</u></b></h4>
-<p>
-<pre>
 
-	<span class="texte-grand"> > <img src="icon-tel.png" style="width: 15px; height: 15px;"> : <a href="tel:+33766376776">07.66.37.67.76</a></span>
+<!-- CONTENU -->
+<main class="content">
 
-	<span class="texte-grand"> > <img src="icon-email.png" style="width: 15px; height: 15px;"> : <a href="mailto:quantinbenjamin42@gmail.com">quantinbenjamin42@gmail.com</a></span>
+    <section class="card">
 
-	<span class="texte-grand"> > <img src="icon-linkedin.png" style="width: 15px; height: 15px;"> : <a href="https://www.linkedin.com/in/quantin-benjamin-512492312/">https://www.linkedin.com/in/quantin-benjamin-512492312/</a></span>
+        <h2>Me contacter</h2>
 
-</pre></p>
+        <p>
+            Vous pouvez me contacter via les moyens ci-dessous :
+        </p>
 
+        <div class="contact-list">
 
+            <div class="contact-item">
+                <img src="icon-tel.png" alt="Téléphone">
+                <a href="tel:+33766376776">07 66 37 67 76</a>
+            </div>
+
+            <div class="contact-item">
+                <img src="icon-email.png" alt="Email">
+                <a href="mailto:quantinbenjamin42@gmail.com">
+                    quantinbenjamin42@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <img src="icon-linkedin.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/quantin-benjamin-512492312/" target="_blank">
+                    Mon profil LinkedIn
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER IDENTIQUE -->
 <footer>
-<br/>
-  <section>
-    <ul>
-      <li><a href="contact.html" class="btn-pied_page">Contact</a></li>
-      <li><a href="mentions-legales.html" class="btn-pied_page">Mentions légales</a></li>
-      <li><a href="a-propos.html" class="btn-pied_page">À propos</a></li>
-    </ul>
-  </section>
-  <p>&copy; 2025 Portfolio_Benjamin. Tous droits réservés.</p>
-  <!--<p><img src="Logo_Madone.png" style="width: 150px; height: 150px;" class="image-droite"></p>-->
-  <br/>
-  <script src="java.js"></script>
-  <script src="script.js"></script>
-  <script src="script_1.js"></script>
+    <section>
+        <ul>
+            <li><a href="contact.html" class="btn-pied_page">Contact</a></li>
+            <li><a href="mentions-legales.html" class="btn-pied_page">Mentions légales</a></li>
+            <li><a href="a-propos.html" class="btn-pied_page">À propos</a></li>
+        </ul>
+    </section>
 
-</body>
+    <p>&copy; 2025 Portfolio_Benjamin. Tous droits réservés.</p>
 </footer>
 
+<script src="java.js"></script>
+<script src="script.js"></script>
+<script src="script_1.js"></script>
+
+</body>
 </html>
-
-

@@ -48,7 +48,11 @@ nav ol {
     justify-content: flex-start;
 }
 
-
+.nav-center {
+    flex: 0 1 auto; /* s'adapte à la taille du contenu */
+    display: flex;
+    justify-content: center;
+}
 
 .nav-right {
     flex: 0 1 auto; /* la zone ne reste plus bloquée à 33% */
