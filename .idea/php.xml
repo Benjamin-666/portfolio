@@ -12,8 +12,11 @@
   </component>
   <component name="PhpCodeSniffer">
     <phpcs_settings>
-      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="bf4b86c7-0ce9-45c5-8fe8-8f7718b3f971" timeout="30000" />
+      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="c29f9a0c-06f6-4585-8a7a-e4519994db82" timeout="30000" />
     </phpcs_settings>
+  </component>
+  <component name="PhpProjectSharedConfiguration">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStan">
     <PhpStan_settings>
