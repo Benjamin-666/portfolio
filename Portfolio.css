@@ -436,11 +436,15 @@ nav ol {
 }
 
 #stage h4 {
-    font-size: 22px;
+    font-size: 25px;
     color: #0078ff;
     text-align: center;
-    margin-bottom: 10px;
 }
+#stage h5 {
+     font-size: 0px;
+     color: #0078ff;
+     text-align: center;
+ }
 
 #stage p {
     position: relative; /* IMPORTANT pour le placement du bouton */
@@ -456,8 +460,8 @@ nav ol {
 }
 
 #stage ul {
-    margin-top: 10px;
-    margin-bottom: 45px; /* pour ne pas gêner le bouton */
+    margin-top: 0px;
+    margin-bottom: 0px; /* pour ne pas gêner le bouton */
     padding: 20px; /* indentation propre */
     border-radius: 10px;
     background-color: #e8f2ff;
@@ -551,8 +555,7 @@ nav ol {
 /* Style du bouton CV réutilisant le style de btn-accueil */
 .btn-cv-details {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 15px;
     padding: 5px 10px;
     background-color: #3498db; /* même bleu */
     color: white;
@@ -569,7 +572,26 @@ nav ol {
     transform: scale(1.05);
     box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
 }
+.btn-cv-details-1 {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #3498db; /* même bleu */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
 
+.btn-cv-details-1:hover {
+    background-color: #2980b9; /* bleu foncé */
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
 /* Responsive mobile */
 @media (max-width: 768px) {
     #cv .texte {
