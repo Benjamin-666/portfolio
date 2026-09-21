@@ -1,3 +1,17 @@
+:root{
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --bg:#f1f5f9;
+    --card:#ffffff;
+
+    --text:#0f172a;
+    --muted:#64748b;
+
+    --border:#e2e8f0;
+
+    --shadow:0 10px 30px rgba(0,0,0,0.08);
+}
 /* =========================
    RESET
 ========================= */
@@ -34,14 +48,19 @@ nav{
     top:0;
     left:0;
     width:100%;
-    z-index:1000;
 
     background:rgba(255,255,255,0.92);
     backdrop-filter:blur(12px);
 
-    border-bottom:1px solid #e2e8f0;
+    border-bottom:1px solid var(--border);
 
-    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 30px;
+
+    z-index:1000;
 }
 
 .nav-center{
@@ -56,7 +75,27 @@ nav{
     font-weight:600;
     letter-spacing:1px;
 }
+nav ol{
+    display:flex;
+    list-style:none;
+    gap:10px;
+}
 
+nav ol a{
+    text-decoration:none;
+    color:var(--text);
+
+    padding:8px 12px;
+    border-radius:10px;
+
+    transition:0.25s;
+    font-weight:500;
+}
+
+nav ol a:hover{
+    background:var(--primary);
+    color:white;
+}
 /* =========================
    HEADER
 ========================= */
@@ -610,4 +649,21 @@ footer p{
 .nav-menu li a:hover{
     background:#2563eb;
     color:white;
+}
+
+@media (max-width:900px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ol{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
 }
